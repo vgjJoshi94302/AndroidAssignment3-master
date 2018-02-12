@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ViralJoshi.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude_text"
+        android:id="@+id/latitude"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/status"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude_text"
+        android:id="@+id/longitude"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/latitude"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_text"
+        android:id="@+id/status"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/gps_title"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/gps_title_text"
+        android:id="@+id/gps_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:src="@drawable/ic_gps_fixed_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gps_imageView"
+        android:layout_alignBottom="@+id/gps_title"
+        android:layout_toEndOf="@+id/gps_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/compass_text"
+        android:id="@+id/compass_title_text"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/longitude"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/compass_imageView"
+        android:background="@drawable/compass"
+        android:layout_below="@+id/compass_title_text"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/ic_explore_24dp"
+        android:layout_above="@+id/compass_imageView"
+        android:layout_toRightOf="@id/compass_title_text" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/targetseekBar"
+        android:max="10"
+        android:layout_alignEnd="@+id/targetdistance"
+        android:layout_above="@+id/sentButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/target_title_text"
+        android:id="@+id/target_distance_text"
+        android:layout_above="@+id/targetseekBar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/targetdistance"
+        android:layout_alignTop="@+id/target_distance_text"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settarget_text"
+        android:id="@+id/sentButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="setTargetOnClick" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/targetimageView"
+        android:background="@drawable/ic_room_24dp"
+        android:layout_above="@+id/targetseekBar"
+        android:layout_toEndOf="@+id/target_distance_text" />
+
+</RelativeLayout>

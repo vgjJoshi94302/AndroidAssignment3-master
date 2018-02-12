@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Forward Air Controller</string>
+    <string name="latitude_text">Latitude :</string>
+    <string name="longitude_text">Longitude :</string>
+    <string name="status_text">GPS_Status : Waiting for Location.....</string>
+    <string name="gps_title_text">Current GPS Information</string>
+    <string name="compass_text">Compass</string>
+    <string name="target_title_text">Targets Distance</string>
+    <string name="settarget_text">Set Target</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="510dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+     >
+<fragment
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="400dp"
+    android:layout_height="390dp"
+    tools:context="com.example.viraljoshi.appassignement3.MapsActivity">
+</fragment>
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:text="string"
+        android:id="@+id/txt1"
+        android:layout_below="@+id/map"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:id="@+id/save"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
